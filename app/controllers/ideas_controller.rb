@@ -24,6 +24,10 @@ class IdeasController < ApplicationController
   # POST /ideas
   # POST /ideas.json
   def create
+    puts "*" * 80
+    puts idea_params
+    puts "*" * 80
+
     @idea = Idea.new(idea_params)
 
     respond_to do |format|
